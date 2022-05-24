@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Carrito</h1></header>
+    <div class="container-products">
+        <div class="modal">
+            <button id="close-modal">X</button>
+            <input type="text" id="new-product" placeholder="Product">
+            <input type="text" id="new-price" placeholder="Price">
+            <input type="file" id="new-image" >
+            <button id="btn-new-create">create new object</button>
+
+            
+        </div><select name="" id="filterXPrice">
+                <option value="">Select filter</option>
+                <option value="Menor a 400">Menor a 400</option>
+                <option value="Entre 400 y 800">Entre 400 y 800</option>
+                <option value="Mayores a 800">Mayores a 800</option>
+            </select>
+        <!-- este select se debe renderizar por javaScript consumiendo el objeto -->
+        <select name="" id="select-products">
+            <option value="">SELECT ONE OPTION</option>
+        </select>
+        <button id="btn-create">Create new product</button>
+    </div>
+    <main id="container-cards"></main>
+
+    <div class="añadidos">
+        <h4>Carrito de compras</h4>
+            <table class="table1">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Accion</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot>
+                    <tr id="footer-carrito">
+                        <th scope="row" colspan="5">Carrito vacio - Comience a comprar</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    <script src="app.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>

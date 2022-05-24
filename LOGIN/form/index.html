@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/avatar.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/estilos/master.css">
+    <title>jelou</title>
+</head>
+<body>
+    <header>
+        
+        <div class="register-box">
+            <img class="avatar" src="/img/avatar.jpg" alt="casita logo">
+            <h1>Registrate aqui</h1>
+
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href=""">Contactanos</a>
+                <a href="paginas/login.html">Login</a>
+            </nav>
+
+            <main>
+                <form id="frm-register" action="">
+                    <!-- Nombre completo -->
+                    <label for="fullName">Nombre completo</label>
+                    <input id="fullName" type="text" placeholder="Ingresa tu nombre completo" value="">
+                
+                    <!-- Nombre de usuario -->
+                    <label for="UseName">Nombre de usuario</label>
+                    <input id="userName" type="text" placeholder="Ingresa tu nombre de usuario" value="">
+                    
+                    <!-- Contraseña -->
+                    <label for="password">Crea una contraseña</label>
+                    <input id="password" type="password" placeholder="Ingresa tu contraseña" value="">
+                    <input id="confirmPassword" type="password" placeholder="confirma tu contraseña" value="">
+                    
+                    <!-- boton -->
+                    <div class="buttons">
+                    <input class="myButton" type="submit" value="Register">
+                    <a href="./paginas/login.html">Inicia sesión aquí</a>
+                    </div>
+                </form>
+            </main>
+        </div>
+        <script src="/register.js"></script>
+    </header>
+</body>
+</html>

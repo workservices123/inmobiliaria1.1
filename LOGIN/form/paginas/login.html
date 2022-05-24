@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="shortcut icon" href="/img/avatar.jpg" type="image/x-icon">
+    
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        
+        <div class="login-box">
+            <img class="avatar" src="/img/avatar.jpg" alt="casita logo">
+            <h1>Inicia sesión aqui</h1>
+            
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="#">Contactanos</a>
+                <a href="../index.html">Register</a>
+            </nav>
+            
+            <main>
+                <form id="frm-register" >
+                    <!-- nombre de usuario -->
+                    <label for="userName">Nombre de usuario</label>
+                    <input id="userName" type="text" placeholder="Ingresa tu nombre de usuario" value="">
+                    
+                    <!-- contraseña -->
+                    <label for="password">Contraseña</label>
+                    <input id="password" type="password" placeholder="Ingresa tu contraseña" value="">
+                    <!-- boton -->
+                    <div class="buttons">
+                        <input type="submit" id="btn-login" class="myButton" value="Log In">
+                        <a href="../index.html">Crea una cuenta</a>
+                        <a href="#">¿Olvidates tu contraseña?</a>
+                    </div>
+                </form>
+            </main>
+        </div>
+        <script src="login.js"></script>
+    </header>
+</body>
+</html>
